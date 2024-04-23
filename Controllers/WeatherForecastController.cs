@@ -6,7 +6,7 @@ using TodoApi.Models;
 namespace TodoApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("calculate_shot")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
