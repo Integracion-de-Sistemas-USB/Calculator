@@ -21,7 +21,7 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
-[HttpPost(Name = "Post")]
+[HttpPost(Name = "calculate_shot")]
 public ShotResult Post(Shot shot)
 {
     return new ShotResult
