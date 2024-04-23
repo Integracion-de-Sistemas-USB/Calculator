@@ -1,0 +1,33 @@
+# Ignore Visual Studio files
+.vs/
+*.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.nuget/
+*.dotCover
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore packages
+packages/
+*.nupkg
+*.paket.restore.log
+
+# Ignore user-specific files
+*.userprefs
+*.usertasks
+
+# Ignore .NET artifacts
+*.dll
+*.pdb
+*.cache
+*.csproj.user
+
+# Ignore Node.js dependencies
+node_modules/
+npm-debug.log
