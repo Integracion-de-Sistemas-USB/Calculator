@@ -9,4 +9,6 @@ public class Ammo
     public float bulletLength { get; set; } 
     public float sightHeight { get; set; }
     public float zeroDistance { get; set; }
+    public float riflingStep { get; set; }
+
 }
