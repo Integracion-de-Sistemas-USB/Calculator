@@ -50,7 +50,7 @@ public ShotResult Post(Shot shot)
         MaximumDistance = new Measurement<DistanceUnit>(shot.target_distance, DistanceUnit.Meter),
         Step = new Measurement<DistanceUnit>(10, DistanceUnit.Meter),
         SightAngle = calc.SightAngle(ammo, rifle, atmosphere),
-        CantAngle = new Measurement<AngularUnit>(shot.angle, AngularUnit.Degree),
+        ShotAngle = new Measurement<AngularUnit>(shot.angle, AngularUnit.Degree),
     };
 
     Wind[] wind = new Wind[1]
@@ -67,8 +67,8 @@ public ShotResult Post(Shot shot)
     var lastPoint = trajectory.Last();
     return new ShotResult
     {
-    x = shot.x + (float) lastPoint.Drop.In(DistanceUnit.Meter),
-    y = shot.y + (float) lastPoint.Windage.In(DistanceUnit.Meter)
+    x = shot.x + (float) lastPoint.Drop.In(DistanceUnit.Inch),
+    y = shot.y + (float) lastPoint.Windage.In(DistanceUnit.Inch)
 
     };
 }
